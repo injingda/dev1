@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <base href="/">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <main id="main">
+        <form action="">
+            <input type="file" id="img" onchange="previewFile()"><br>
+            <img src="" height="200" alt="Image preview..."><br>
+            <label for="userid">主人名</label>
+            <input type="text" name="userid" id="userid"><br>
+            <label for="name">品名</label><br>
+            <input type="text" name="name" id="name"><br>
+            <label for="year">年</label><br>
+            <input type="text" name="firstName" id="year"><br>
+            <label for="month">月</label><br>
+            <input type="text" name="month" id="month"><br>
+            <label for="day">日</label><br>
+            <input type="text" name="day" id="day"><br>
+            <label for="hour">時</label><br>
+            <input type="text" name="hour" id="hour"><br>
+            <label for="minute">分</label><br>
+            <input type="text" name="minute" id="minute"><br>
+            <label for="second">秒</label><br>
+            <input type="text" name="second" id="second"><br>
+            <button id="addBtn" class="btn waves-effect waves-light">Add</button>
+            <button id="updateBtn" class="btn waves-effect waves-light">Update</button>
+            <button id="removeBtn" class="btn waves-effect waves-light">Remove</button>
+
+            <label for="year">年</label><br>
+            <input type="text" name="firstName" id="year-d"><br>
+            <label for="month">月</label><br>
+            <input type="text" name="month" id="month-d"><br>
+            <label for="day">日</label><br>
+            <input type="text" name="day" id="day-d"><br>
+            <label for="hour">時</label><br>
+            <input type="text" name="hour" id="hour-d"><br>
+            <label for="minute">分</label><br>
+            <input type="text" name="minute" id="minute-d"><br>
+            <label for="second">秒</label><br>
+            <input type="text" name="second" id="second-d"><br>
+            <br>
+
+            <button id="result-btn">result</button>
+        </form>
+    </main>
+    <div id="result" class="result"></div>
+    <div id="result-percent"></div>
+
+    <div class="container" id="success">
+        <p>success!</p>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-storage.js"></script>
+
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyB5B9hwWPuEeR4T5lUso7c5OlA-dN_9Peo",
+            authDomain: "dev1-265109.firebaseapp.com",
+            databaseURL: "https://dev1-265109.firebaseio.com",
+            projectId: "dev1-265109",
+            storageBucket: "dev1-265109.appspot.com",
+            messagingSenderId: "364755400155",
+            appId: "1:364755400155:web:40d91886326ef0811b63fe",
+            measurementId: "G-5P1P3498LD"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./slick/slick.min.js"></script>
+    <script src="./data.js"></script>
+</body>
+
+</html>
