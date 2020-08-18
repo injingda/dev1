@@ -77,8 +77,8 @@ addBtn.addEventListener('click', (e) => {
         },
 
         function () {
-            var birth = new Date(inputYear.value, inputMonth.value, inputDay.value, inputHour.value, inputMinute.value, inputSecond.value).getTime();
-            var dead = new Date(inputYearD.value, inputMonthD.value, inputDayD.value, inputHourD.value, inputMinuteD.value, inputSecondD.value).getTime();
+            var birth = new Date(inputYear.value, ((inputMonth.value) - 1), inputDay.value, inputHour.value, inputMinute.value, inputSecond.value).getTime();
+            var dead = new Date(inputYearD.value, ((inputMonthD.value) - 1), inputDayD.value, inputHourD.value, inputMinuteD.value, inputSecondD.value).getTime();
 
             uploadTask.snapshot.ref.getDownloadURL().then(function (downloadURL) {
                 rootRef.doc().set({

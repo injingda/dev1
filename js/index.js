@@ -15,11 +15,12 @@ window.onload = function () {
             var resultP = Math.floor((section / distance) * 100);
             var death = new Date(dead).toLocaleDateString();
             var birthDay = new Date(birth).toLocaleDateString();
+            console.log(querySnapshot.docs);
             setTimeout(function () {
-                if ($('.slick-slide').length < ((querySnapshot.docs).length) + 1) {
-                    $('.result').slick("slickAdd", '<div><div class="old">' + resultP + '才</div><img id="image"src="' + imgSrc + '" alt=""><div class="index-date"><div >買った日:' + birthDay + '</div><div>賞味期間:' + death + '</div></div></div>');
-                };
-            }, 0)
+                // $('.slick-slide').length < ((querySnapshot.docs).length) 
+                $('.result').slick("slickAdd", '<div><div class="old">' + resultP + '才</div><img id="image"src="' + imgSrc + '" alt=""><div class="index-date"><div >買った日:' + birthDay + '</div><div>賞味期間:' + death + '</div></div></div>');
+
+            }, 1000)
         });
 
         $('.result').slick({
