@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="dropdown">
+            <div class="drop drop-first">
+                <a href="" class="dropbtn dropdown-content-btn">
+                    <button class="drp-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </a>
+                <a href="./index.html" class="dropdown-content">ホーム</a>
+            </div>
+            <div class="drop drop-second">
+                <a href="./intro.html" class="dropdown-content">紹介</a>
+                <a href="./grave.html" class="dropdown-content">お墓</a>
+            </div>
+        </div>
+        <div class="title">
+            <h4 class="first">物の年齢</h4>
+            <h1 class="second">新規登録</h1>
+        </div>
+    </div class="nav">
+    <main id="main">
+        <form action="">
+            <div class="user-data">
+                <div id="upload-file">
+                    <input type="file" id="img" onchange="previewFile()">
+                    <img src="" height="200" alt="Image preview...">
+                </div>
+                <div class="input-data">
+                    <span class="name-container">
+                        <label for="name">名前：</label>
+                        <input type="text" name="name" id="name">
+                    </span>
+                    <div id="birth-data">
+                        生日:
+                        <span class="year-container">
+                            <input type="text" name="firstName" id="year">
+                            <label for="year">年</label>
+                        </span>
+                        <span class="month-container">
+                            <input type="text" name="month" id="month">
+                            <label for="month">月</label>
+                        </span>
+                        <span class="day-container">
+                            <input type="text" name="day" id="day"></span>
+                        <label for="day">日</label>
+                        <span class="hour-container">
+                            <input type="text" name="hour" id="hour">
+                            <label for="hour">時</label>
+                        </span>
+                        <span class="minute-container">
+                            <input type="text" name="minute" id="minute"></span>
+                        <label for="minute">分</label>
+                        <span class="second-container">
+                            <input type="text" name="second" id="second"></span>
+                        <label for="second">秒</label>
+                    </div>
+                    <br>
+                    <div class="death-container">
+                        死亡日:
+                        <span class="year-d-container">
+                            <input type="text" name="firstName" id="year-d">
+                            <label for="year">年</label>
+                        </span>
+                        <span class="month-d-container">
+                            <input type="text" name="month" id="month-d">
+                            <label for="month">月</label>
+                        </span>
+                        <span class="day-d-container">
+                            <input type="text" name="day" id="day-d">
+                            <label for="day">日</label>
+                        </span>
+                        <span class="hour-d-container">
+                            <input type="text" name="hour" id="hour-d">
+                            <label for="hour">時</label>
+                        </span>
+                        <span class="minute-d-container">
+                            <input type="text" name="minute" id="minute-d">
+                            <label for="minute">分</label>
+                        </span>
+                        <span class="second-d-cpntainer">
+                            <input type="text" name="second" id="second-d">
+                            <label for="second">秒</label>
+                        </span>
+                    </div>
+
+                    <div class="email-container">
+                        <label for="email">リマインド宛メール：</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                </div>
+            </div>
+            <div id="addBtn-container">
+                <button id="addBtn" class="btn">送信</button>
+            </div>
+        </form>
+    </main>
+    <div class="container" id="success">
+        <p>成功!</p>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-storage.js"></script>
+
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyB5B9hwWPuEeR4T5lUso7c5OlA-dN_9Peo",
+            authDomain: "dev1-265109.firebaseapp.com",
+            databaseURL: "https://dev1-265109.firebaseio.com",
+            projectId: "dev1-265109",
+            storageBucket: "dev1-265109.appspot.com",
+            messagingSenderId: "364755400155",
+            appId: "1:364755400155:web:40d91886326ef0811b63fe",
+            measurementId: "G-5P1P3498LD"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./slick/slick.min.js"></script>
+    <script src="./js/signup.js"></script>
+</body>
+
+</html>
