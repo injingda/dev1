@@ -89,6 +89,7 @@
 
 .title {
     text-align: center;
+
 }
 
 .first {
@@ -223,7 +224,6 @@ form input {
     border-bottom: 1px solid black;
 }
 
-
 #name {
     width: 100px;
 }
@@ -258,8 +258,6 @@ form input {
     font-size: 2rem;
 }
 
-
-
 .rail-container {
     height: 15vh;
     width: 100%;
@@ -282,10 +280,6 @@ form input {
     margin: auto;
     cursor: pointer;
 }
-
-/* .index-date {
-    display: none;
-} */
 
 .slick-prev,
 .slick-next {
@@ -339,15 +333,32 @@ form input {
 
 .index-date {
     font-size: 1rem !important;
+    display: none;
+    margin-top: 3rem;
 }
 
 #frame-container {
     position: relative;
 }
 
-
 #image {
     position: relative;
+}
+
+.imgs-index:focus img {
+    outline: 5px solid #0abde3;
+}
+
+.imgs-index:focus+.index-date {
+    display: block;
+}
+
+.grave-img {
+    width: 220px !important;
+    height: 310px !important;
+    object-fit: contain !important;
+    margin: auto !important;
+    cursor: pointer !important;
 }
 
 #frame {

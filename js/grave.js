@@ -6,7 +6,7 @@ window.onload = function () {
     var now = new Date().getTime();
     rootRef.where("dead", "<", now).get().then(function (querySnapshot) {
         querySnapshot.forEach(function (doc) {
-            var name = doc.data().name;
+            var name = doc.data().tName;
             var dead = doc.data().dead;
             var birth = doc.data().birth;
             var imgSrc = doc.data().image;
@@ -15,7 +15,7 @@ window.onload = function () {
 
             setTimeout(function () {
                 if ($('.slick-slide').length < ((querySnapshot.docs).length) + 1) {
-                    $('.result').slick("slickAdd", '<div><div id="frame-container"><img id="image" src="' + imgSrc + '" alt=""><img id="frame" src="./imgs/die_frame.png"></div><div class="grave-date"><div>名前：' + name + '</div><div>出生日:' + birthDay + '才</div><div>死亡日:' + death + '才</div></div></div>');
+                    $('.result').slick("slickAdd", '<div><div id="frame-container"><img class="grave-img" src="' + imgSrc + '" alt=""><img id="frame" src="./imgs/die_frame.png"></div><div class="grave-date"><div>名前：' + name + '</div><div>出生日:' + birthDay + '</div><div>死亡日:' + death + '</div></div></div>');
                 };
             }, 0)
         });
