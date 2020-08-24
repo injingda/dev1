@@ -16,7 +16,7 @@ window.onload = function () {
             var death = new Date(dead).toLocaleDateString();
             var birthDay = new Date(birth).toLocaleDateString();
             setTimeout(function () {
-                $('.result').slick("slickAdd", '<div><div class="old">' + resultP + '歳</div><a class="imgs-index" href="#"><img id="image"src="' + imgSrc + '" alt=""></a><div class="index-date"><div >買った日:' + birthDay + '</div><div>賞味期間:' + death + '</div></div></div>');
+                $('.result').slick("slickAdd", '<div><div class="old">' + resultP + '歳</div><a class="imgs-index" href="#"><img id="image"src="' + imgSrc + '" alt=""></a><div class="index-date"><div >出生日:' + birthDay + '</div><div>死亡日:' + death + '</div></div></div>');
             }, 1000)
         });
 
@@ -24,8 +24,8 @@ window.onload = function () {
             centerMode: true,
             centerPadding: '60px',
             slidesToShow: 3,
-            prevArrow: '<button type="button" class="slick-prev">⬅︎もっと若い</button>',
-            nextArrow: '<button type="button" class="slick-next">もっとお年寄り➡︎</button>',
+            prevArrow: '<button type="button" class="slick-prev">←</button>',
+            nextArrow: '<button type="button" class="slick-next">→</button>',
             responsive: [{
                     breakpoint: 1024,
                     settings: {

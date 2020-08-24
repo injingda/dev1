@@ -25,6 +25,7 @@
     vertical-align: center;
     color: white;
     cursor: pointer;
+    margin-top: 0.5rem;
 }
 
 .drp-btn:hover {
@@ -46,8 +47,8 @@
     padding: 0.5rem 1rem;
     margin-top: 0.1rem;
     margin-left: 0.1rem;
-    width: 70px;
-    height: 38px;
+    width: 69px;
+    height: 46px;
     margin: auto;
 }
 
@@ -58,12 +59,10 @@
     height: 50px;
     font-size: 1.5rem;
     border: 2px solid #0abde3;
-    margin-top: 0.1rem;
-    margin-left: 0.1rem;
     color: #0abde3;
     font-weight: bold;
     margin: auto;
-    vertical-align: auto;
+    padding: 0.5rem 0 0 0;
     display: none;
 }
 
@@ -285,15 +284,15 @@ form input {
 .slick-next {
     color: black;
     position: absolute;
-    top: 140%;
+    top: 150%;
     border: none;
     background: #0abde3;
     color: white;
     font-weight: bold;
-    font-size: 1.2rem;
-    padding: 1rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 0.5rem 0.8rem 0.5rem;
     border-radius: 30px;
-    width: 200px;
+    width: 80px;
     cursor: pointer;
 }
 
@@ -310,11 +309,11 @@ form input {
 }
 
 .slick-next {
-    right: -10%;
+    right: 0;
 }
 
 .slick-prev {
-    left: -10%;
+    left: 0;
 }
 
 /* Grave */
@@ -368,4 +367,33 @@ form input {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width: 1300px) {
+    .rail-container {
+        bottom: 30%;
+        height: 15vh;
+    }
+
+    .result div img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .slick-slider {
+        top: -130%;
+    }
+
+    .slick-prev,
+    .slick-next {
+        top: 120%;
+    }
+
+    .second {
+        font-size: 2.5rem;
+    }
+
+    .first {
+        font-size: 1.5rem;
+    }
 }
