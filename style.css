@@ -125,21 +125,20 @@
 
 #operate {
     position: absolute;
-    bottom: 15%;
+    bottom: 5%;
     right: 30%;
-    width: 300px;
+    width: 280px;
 }
 
 #s-operate {
     position: absolute;
-    bottom: 15%;
+    bottom: 5%;
     right: 10%;
     width: 200px;
 }
 
 .des-container p {
-    /* width: 50%; */
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: gray;
 }
 
@@ -148,7 +147,22 @@
 }
 
 .des-container .second-p {
-    width: 40%;
+    width: 80%;
+}
+
+.sixth-p {
+    position: absolute;
+    bottom: -3%;
+    right: 0;
+}
+
+.operate-left {
+    margin: 2rem 0 0 10rem;
+    width: 220px;
+}
+
+.operate-border {
+    border-bottom: 2px solid black;
 }
 
 /* signup */
@@ -369,7 +383,7 @@ form input {
     transform: translate(-50%, -50%);
 }
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (max-width: 1400px) {
     .rail-container {
         bottom: 30%;
         height: 15vh;
@@ -395,5 +409,28 @@ form input {
 
     .first {
         font-size: 1.5rem;
+    }
+
+    #dog {
+        right: 0;
+    }
+
+    .fifth-p,
+    .forth-p {
+        margin-left: 2rem;
+    }
+
+    .grave-img {
+        width: 150px !important;
+        height: 200px !important;
+    }
+
+    .grave-result {
+        top: -94%;
+    }
+
+    #frame {
+        height: 230px;
+        width: 190px;
     }
 }

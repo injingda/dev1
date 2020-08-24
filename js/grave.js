@@ -15,12 +15,12 @@ window.onload = function () {
 
             setTimeout(function () {
                 if ($('.slick-slide').length < ((querySnapshot.docs).length) + 1) {
-                    $('.result').slick("slickAdd", '<div><div id="frame-container"><img class="grave-img" src="' + imgSrc + '" alt=""><img id="frame" src="./imgs/die_frame.png"></div><div class="grave-date"><div>名前：' + name + '</div><div>出生日:' + birthDay + '</div><div>死亡日:' + death + '</div></div></div>');
+                    $('.grave-result').slick("slickAdd", '<div><div id="frame-container"><img class="grave-img" src="' + imgSrc + '" alt=""><img id="frame" src="./imgs/die_frame.png"></div><div class="grave-date"><div>名前：' + name + '</div><div>出生日:' + birthDay + '</div><div>死亡日:' + death + '</div></div></div>');
                 };
             }, 0)
         });
 
-        $('.result').slick({
+        $('.grave-result').slick({
             centerMode: true,
             centerPadding: '60px',
             slidesToShow: 3,
