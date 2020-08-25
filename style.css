@@ -298,7 +298,7 @@ form input {
 .slick-next {
     color: black;
     position: absolute;
-    top: 150%;
+    top: 140%;
     border: none;
     background: #0abde3;
     color: white;
@@ -400,7 +400,7 @@ form input {
 
     .slick-prev,
     .slick-next {
-        top: 120%;
+        top: 110%;
     }
 
     .second {
